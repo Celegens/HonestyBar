@@ -17,7 +17,7 @@ using Microsoft.Net.Http.Headers;
 
 namespace HonestyBar.Controllers.V1
 {
-    [Route(ApiRoutes.DefaultApiControllerRoute)]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     [Produces(MediaTypeNames.Application.Json)]
     [ApiVersion(ApiVersionNames.V1)]
@@ -76,18 +76,18 @@ namespace HonestyBar.Controllers.V1
 
         [HttpGet]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public async Task<IActionResult> GetAsync()
+        public async Task<IActionResult> GetAsync(CancellationToken cancellationToken)
         {
-            var products = await _productRepository.GetAllAsync();
+            var products = await _productRepository.GetAllAsync(cancellationToken);
 
             return new OkObjectResult(products.Select(p => new ProductDto(p.Id, p.Name)));
         }
 
         [HttpGet("{productId}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public async Task<IActionResult> GetByIdAsync(Guid productId)
+        public async Task<IActionResult> GetByIdAsync(Guid productId, CancellationToken cancellationToken)
         {
-            var product = await _productRepository.FindAsync(productId);
+            var product = await _productRepository.FindAsync(productId, cancellationToken);
 
             return new OkObjectResult(new ProductDto(product.Id, product.Name));
         }

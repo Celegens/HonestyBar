@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace HonestyBar.Domain
 {
@@ -10,14 +12,21 @@ namespace HonestyBar.Domain
             FirstName = firstName;
             LastName = lastName;
             Email = email;
+            Consumptions = new List<Product>();
+            Active = true;
+            Saldo = 0.0D;
         }
 
         public Guid Id { get; }
-        
+
         public string FirstName { get; }
 
         public string LastName { get; }
 
         public string Email { get; }
+        public bool Active { get; set; }
+        public double Saldo { get; set; }
+
+        public List<Product> Consumptions { get; set; }
     }
 }

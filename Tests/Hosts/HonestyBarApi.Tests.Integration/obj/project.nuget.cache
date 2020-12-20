@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jz5Tilc9MCMToJ5dzqiMqJ6LB4dQeaxNOjLkZwNHJjY3Mz9nwqqtsKYnf/sv44oOZT3ziHnLx2qGAWLrvoMBcQ==",
+  "dgSpecHash": "k1O8a7kMeKot8Qew5NR4KRQZr2xab30Vk7Rb8B5hAAXy1ZcJtFznQXm7MM9P6AE5ZOg3+9Kb4QHQAur19WA7OA==",
   "success": true,
   "projectFilePath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Tests\\Hosts\\HonestyBarApi.Tests.Integration\\HonestyBarApi.Tests.Integration.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,7 @@
     "C:\\Users\\bramv\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\1.0.2\\microsoft.aspnetcore.http.extensions.1.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.features\\2.1.1\\microsoft.aspnetcore.http.features.2.1.1.nupkg.sha512",
     "C:\\Users\\bramv\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\3.1.8\\microsoft.aspnetcore.mvc.testing.3.1.8.nupkg.sha512",
-    "C:\\Users\\bramv\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\4.1.1\\microsoft.aspnetcore.mvc.versioning.4.1.1.nupkg.sha512",
+    "C:\\Users\\bramv\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\4.2.0\\microsoft.aspnetcore.mvc.versioning.4.2.0.nupkg.sha512",
     "C:\\Users\\bramv\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\4.1.1\\microsoft.aspnetcore.mvc.versioning.apiexplorer.4.1.1.nupkg.sha512",
     "C:\\Users\\bramv\\.nuget\\packages\\microsoft.aspnetcore.testhost\\3.1.8\\microsoft.aspnetcore.testhost.3.1.8.nupkg.sha512",
     "C:\\Users\\bramv\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\1.0.2\\microsoft.aspnetcore.webutilities.1.0.2.nupkg.sha512",

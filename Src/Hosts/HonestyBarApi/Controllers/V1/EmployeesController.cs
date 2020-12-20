@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mime;
 using System.Threading;
@@ -14,7 +15,7 @@ using Microsoft.Net.Http.Headers;
 
 namespace HonestyBar.Controllers.V1
 {
-    [Route(ApiRoutes.DefaultApiControllerRoute)]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     [Produces(MediaTypeNames.Application.Json)]
     [ApiVersion(ApiVersionNames.V1)]
@@ -22,10 +23,12 @@ namespace HonestyBar.Controllers.V1
     {
 
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IProductRepository _productRepository;
 
-        public EmployeesController(IEmployeeRepository employeeRepository)
+        public EmployeesController(IEmployeeRepository employeeRepository, IProductRepository productRepository)
         {
             _employeeRepository = employeeRepository;
+            _productRepository = productRepository;
         }
 
         /// <summary>
@@ -73,7 +76,7 @@ namespace HonestyBar.Controllers.V1
 
         [HttpGet]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public async Task<IActionResult> GetAsync()
+        public async Task<IActionResult> GetAsync(CancellationToken cancellationToken)
         {
             var employees = await _employeeRepository.GetAllAsync();
 
@@ -82,11 +85,26 @@ namespace HonestyBar.Controllers.V1
 
         [HttpGet("{employeeId}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public async Task<IActionResult> GetByIdAsync(Guid employeeId)
+        public async Task<IActionResult> GetByIdAsync(Guid employeeId, CancellationToken cancellationToken)
         {
-            var employee = await _employeeRepository.FindAsync(employeeId);
+            var employee = await _employeeRepository.FindAsync(employeeId, cancellationToken);
 
             return new OkObjectResult(new EmployeeDto(employee.Id, employee.FirstName, employee.LastName, employee.Email));
+        }
+        [HttpPost("{employeeId}/addconsumption/{productId}")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IActionResult> AddConsumptionAsync(Guid employeeId, Guid productId, CancellationToken cancellationToken)
+        {
+            var employee = await _employeeRepository.FindAsync(employeeId, cancellationToken);
+            var product = await _productRepository.FindAsync(productId, cancellationToken);
+            
+            employee.Consumptions.Add(product);
+            employee.Saldo += product.UnitPrice;
+
+            await _employeeRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
+            List<ProductDto> consumptionsDto = new List<ProductDto>() ;
+            employee.Consumptions.ForEach(c => consumptionsDto.Add(new ProductDto(c.Id, c.Name)));
+            return new OkObjectResult(new EmployeeDto(employee.Id, employee.FirstName, employee.LastName, employee.Email, consumptionsDto));
         }
 
         [HttpPost]

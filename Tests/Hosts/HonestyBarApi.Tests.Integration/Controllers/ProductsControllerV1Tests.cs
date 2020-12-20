@@ -20,7 +20,7 @@ namespace HonestyBar.Tests.Integration
         [Fact]
         public async Task Options_ProductsRoot_Returns200Ok()
         {
-            using var httpRequestMessage = new HttpRequestMessage(HttpMethod.Options, "api/v1/projects");
+            using var httpRequestMessage = new HttpRequestMessage(HttpMethod.Options, "api/v1/products");
             var response = await _client.SendAsync(httpRequestMessage).ConfigureAwait(false);
 
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);

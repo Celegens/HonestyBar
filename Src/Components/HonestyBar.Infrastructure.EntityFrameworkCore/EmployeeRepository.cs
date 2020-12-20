@@ -5,6 +5,8 @@ using HonestyBar.Infrastructure.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace HonestyBar
@@ -20,9 +22,9 @@ namespace HonestyBar
 
         public IUnitOfWork UnitOfWork => _unitOfWork;
 
-        public async Task<IEnumerable<Employee>> GetAllAsync()
+        public async Task<IEnumerable<Employee>> GetAllAsync(bool active = true,CancellationToken cancellationToken = default)
         {
-            return await _unitOfWork.Set<Employee>().ToListAsync();
+            return await _unitOfWork.Set<Employee>().Where(e => e.Active == active).ToListAsync(); 
         }
 
         public Employee Add(Employee employee)
@@ -32,9 +34,10 @@ namespace HonestyBar
             return employee;
         }
 
-        public async Task<Employee> FindAsync(Guid id)
+      
+        public async Task<Employee> FindAsync( Guid id, CancellationToken cancellationToken)
         {
-            return await _unitOfWork.Set<Employee>().FindAsync(id);
+            return await _unitOfWork.Set<Employee>().FindAsync(new object[] { id }, cancellationToken);
         }
 
     }

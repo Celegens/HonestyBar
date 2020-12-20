@@ -23,7 +23,7 @@ Open the solution and run the api project. You will see a swagger page that show
 
 # Tasks
 1. Setup a git repository that we can access with this code as an initial commit
-2. Make sure all tests succeed
+2. Make sure all tests succeedin
 3. Add a unit price to the products
 4. Add the possibility to register a consumption for an employee
 5. Add a V2 of the api with the possibility to deactivate an employee, it must also be possible to retrieve the list of active/inactive employees

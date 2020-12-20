@@ -5,6 +5,7 @@ using HonestyBar.Infrastructure.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace HonestyBar
@@ -20,14 +21,14 @@ namespace HonestyBar
 
         public IUnitOfWork UnitOfWork => _unitOfWork;
 
-        public async Task<IEnumerable<Product>> GetAllAsync()
+        public async Task<IEnumerable<Product>> GetAllAsync(CancellationToken cancellationToken)
         {
-            return await _unitOfWork.Set<Product>().ToListAsync();
+            return await _unitOfWork.Set<Product>().ToListAsync(cancellationToken);
         }
 
-        public async Task<Product> FindAsync(Guid id)
+        public async Task<Product> FindAsync(Guid id,CancellationToken cancellationToken)
         {
-            return await _unitOfWork.Set<Product>().FindAsync(id);
+            return await _unitOfWork.Set<Product>().FindAsync(new object[] { id }, cancellationToken);
         }
 
         public Product Add(Product product)
