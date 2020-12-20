@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace HonestyBar.Domain
 {
@@ -9,7 +10,12 @@ namespace HonestyBar.Domain
             Id = Guid.NewGuid();
             Name = name;
         }
-
+        public Product(string name , double unitprice = 0)
+        {
+            Id = Guid.NewGuid();
+            Name = name;
+            UnitPrice = unitprice;
+        }
         public Guid Id { get; }
 
         public string Name { get; }

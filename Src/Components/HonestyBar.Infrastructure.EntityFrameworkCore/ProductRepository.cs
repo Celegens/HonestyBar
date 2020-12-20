@@ -21,7 +21,7 @@ namespace HonestyBar
 
         public IUnitOfWork UnitOfWork => _unitOfWork;
 
-        public async Task<IEnumerable<Product>> GetAllAsync(CancellationToken cancellationToken)
+        public async Task<IEnumerable<Product>> GetAllAsync(CancellationToken cancellationToken=default)
         {
             return await _unitOfWork.Set<Product>().ToListAsync(cancellationToken);
         }

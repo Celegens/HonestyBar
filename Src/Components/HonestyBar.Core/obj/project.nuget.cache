@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "HueCJxLYkc5VtnsOq8jHFnuLweKlubTWLzG1uXjTXDy8YRt/+wsjiP09I8iQJoHbVzC+Uyp5iNqRkGV8Ifr6MQ==",
+  "dgSpecHash": "PvkuJi6FCUUsgAD/+o8MOaUIbR73McwUnDmryHdRE1TQrOZRpy4x2jcG+O4M8ArG2aCQDZQ2F3crQgAhTiVmsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Core\\HonestyBar.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\bramv\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",

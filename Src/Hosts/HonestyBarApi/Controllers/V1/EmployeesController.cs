@@ -93,7 +93,7 @@ namespace HonestyBar.Controllers.V1
         }
         [HttpPost("{employeeId}/addconsumption/{productId}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public async Task<IActionResult> AddConsumptionAsync(Guid employeeId, Guid productId, CancellationToken cancellationToken)
+        public async Task<IActionResult> AddConsumptionAsync(Guid employeeId, Guid productId, CancellationToken cancellationToken = default)
         {
             var employee = await _employeeRepository.FindAsync(employeeId, cancellationToken);
             var product = await _productRepository.FindAsync(productId, cancellationToken);
