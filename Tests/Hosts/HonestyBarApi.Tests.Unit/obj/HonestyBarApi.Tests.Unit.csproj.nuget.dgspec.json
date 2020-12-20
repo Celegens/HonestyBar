@@ -1,0 +1,434 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Tests\\Hosts\\HonestyBarApi.Tests.Unit\\HonestyBarApi.Tests.Unit.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Core\\HonestyBar.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Core\\HonestyBar.Core.csproj",
+        "projectName": "HonestyBar.Core",
+        "projectPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Core\\HonestyBar.Core.csproj",
+        "packagesPath": "C:\\Users\\bramv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bramv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.EntityFrameworkCore\\HonestyBar.Infrastructure.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.EntityFrameworkCore\\HonestyBar.Infrastructure.EntityFrameworkCore.csproj",
+        "projectName": "HonestyBar.Infrastructure.EntityFrameworkCore",
+        "projectPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.EntityFrameworkCore\\HonestyBar.Infrastructure.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\bramv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bramv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Core\\HonestyBar.Core.csproj": {
+                "projectPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Core\\HonestyBar.Core.csproj"
+              },
+              "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.Interfaces\\HonestyBar.Infrastructure.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.Interfaces\\HonestyBar.Infrastructure.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.Interfaces\\HonestyBar.Infrastructure.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.Interfaces\\HonestyBar.Infrastructure.Interfaces.csproj",
+        "projectName": "HonestyBar.Infrastructure.Interfaces",
+        "projectPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.Interfaces\\HonestyBar.Infrastructure.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\bramv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bramv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Core\\HonestyBar.Core.csproj": {
+                "projectPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Core\\HonestyBar.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Hosts\\HonestyBarApi\\HonestyBarApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Hosts\\HonestyBarApi\\HonestyBarApi.csproj",
+        "projectName": "HonestyBarApi",
+        "projectPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Hosts\\HonestyBarApi\\HonestyBarApi.csproj",
+        "packagesPath": "C:\\Users\\bramv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Hosts\\HonestyBarApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bramv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.EntityFrameworkCore\\HonestyBar.Infrastructure.EntityFrameworkCore.csproj": {
+                "projectPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.EntityFrameworkCore\\HonestyBar.Infrastructure.EntityFrameworkCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "CorrelationId": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.14.0, )"
+            },
+            "Microsoft.AspNetCore.AzureAppServicesIntegration": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.1.3, )"
+            },
+            "Serilog.Enrichers.Process": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Serilog.Enrichers.Thread": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Sinks.ApplicationInsights": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Serilog.Sinks.Debug": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Tests\\Hosts\\HonestyBarApi.Tests.Unit\\HonestyBarApi.Tests.Unit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Tests\\Hosts\\HonestyBarApi.Tests.Unit\\HonestyBarApi.Tests.Unit.csproj",
+        "projectName": "HonestyBarApi.Tests.Unit",
+        "projectPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Tests\\Hosts\\HonestyBarApi.Tests.Unit\\HonestyBarApi.Tests.Unit.csproj",
+        "packagesPath": "C:\\Users\\bramv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Tests\\Hosts\\HonestyBarApi.Tests.Unit\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bramv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Hosts\\HonestyBarApi\\HonestyBarApi.csproj": {
+                "projectPath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Hosts\\HonestyBarApi\\HonestyBarApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

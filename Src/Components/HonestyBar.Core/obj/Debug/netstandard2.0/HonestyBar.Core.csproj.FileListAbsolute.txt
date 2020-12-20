@@ -1,0 +1,17 @@
+C:\Users\geert\source\repos\Kenze\JobInterviews\Api-Junior\Src\Components\HonestyBar.Core\bin\Debug\netstandard2.0\HonestyBar.Core.deps.json
+C:\Users\geert\source\repos\Kenze\JobInterviews\Api-Junior\Src\Components\HonestyBar.Core\bin\Debug\netstandard2.0\HonestyBar.Core.dll
+C:\Users\geert\source\repos\Kenze\JobInterviews\Api-Junior\Src\Components\HonestyBar.Core\bin\Debug\netstandard2.0\HonestyBar.Core.pdb
+C:\Users\geert\source\repos\Kenze\JobInterviews\Api-Junior\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.AssemblyInfoInputs.cache
+C:\Users\geert\source\repos\Kenze\JobInterviews\Api-Junior\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.AssemblyInfo.cs
+C:\Users\geert\source\repos\Kenze\JobInterviews\Api-Junior\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.csproj.CoreCompileInputs.cache
+C:\Users\geert\source\repos\Kenze\JobInterviews\Api-Junior\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.dll
+C:\Users\geert\source\repos\Kenze\JobInterviews\Api-Junior\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.pdb
+C:\Users\bramv\Desktop\HonestyBar - BramVandenBroeck\HonestyBar - BramVandenBroeck\Src\Components\HonestyBar.Core\bin\Debug\netstandard2.0\HonestyBar.Core.deps.json
+C:\Users\bramv\Desktop\HonestyBar - BramVandenBroeck\HonestyBar - BramVandenBroeck\Src\Components\HonestyBar.Core\bin\Debug\netstandard2.0\HonestyBar.Core.dll
+C:\Users\bramv\Desktop\HonestyBar - BramVandenBroeck\HonestyBar - BramVandenBroeck\Src\Components\HonestyBar.Core\bin\Debug\netstandard2.0\HonestyBar.Core.pdb
+C:\Users\bramv\Desktop\HonestyBar - BramVandenBroeck\HonestyBar - BramVandenBroeck\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.csprojAssemblyReference.cache
+C:\Users\bramv\Desktop\HonestyBar - BramVandenBroeck\HonestyBar - BramVandenBroeck\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.AssemblyInfoInputs.cache
+C:\Users\bramv\Desktop\HonestyBar - BramVandenBroeck\HonestyBar - BramVandenBroeck\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.AssemblyInfo.cs
+C:\Users\bramv\Desktop\HonestyBar - BramVandenBroeck\HonestyBar - BramVandenBroeck\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.csproj.CoreCompileInputs.cache
+C:\Users\bramv\Desktop\HonestyBar - BramVandenBroeck\HonestyBar - BramVandenBroeck\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.dll
+C:\Users\bramv\Desktop\HonestyBar - BramVandenBroeck\HonestyBar - BramVandenBroeck\Src\Components\HonestyBar.Core\obj\Debug\netstandard2.0\HonestyBar.Core.pdb

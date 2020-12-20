@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QlW3B7OPiNhthZwBR93ST7zOenG01CogfUCB0qx1kgtGN1dZJy0TwiCED/c49Cz2cG+KpT4W2vk4kbczW7mHxw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bramv\\Desktop\\HonestyBar - BramVandenBroeck\\HonestyBar - BramVandenBroeck\\Src\\Components\\HonestyBar.Infrastructure.Interfaces\\HonestyBar.Infrastructure.Interfaces.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

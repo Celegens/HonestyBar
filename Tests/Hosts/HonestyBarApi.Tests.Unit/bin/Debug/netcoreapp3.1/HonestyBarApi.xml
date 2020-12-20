@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HonestyBarApi</name>
+    </assembly>
+    <members>
+        <member name="T:HonestyBar.Configuration.CorrelationIdConfig">
+            <summary>
+            Add CorrelationId middleware to the ASPNET pipeline.
+            See https://github.com/stevejgordon/CorrelationId for more information.
+            </summary>
+        </member>
+        <member name="M:HonestyBar.Controllers.V1.EmployeesController.Options">
+            <summary>
+            Returns an Allow HTTP header with the allowed HTTP methods.
+            </summary>
+            <returns>A 200 OK response.</returns>
+        </member>
+        <member name="M:HonestyBar.Controllers.V1.EmployeesController.Options(System.Guid)">
+            <summary>
+            Returns an Allow HTTP header with the allowed HTTP methods for a value with the specified identifier.
+            </summary>
+            <param name="employeeId">The value's identifier.</param>
+            <returns>A 200 OK response.</returns>
+        </member>
+        <member name="M:HonestyBar.Controllers.V1.ProductsController.Options">
+            <summary>
+            Returns an Allow HTTP header with the allowed HTTP methods.
+            </summary>
+            <returns>A 200 OK response.</returns>
+        </member>
+        <member name="M:HonestyBar.Controllers.V1.ProductsController.Options(System.Guid)">
+            <summary>
+            Returns an Allow HTTP header with the allowed HTTP methods for a value with the specified identifier.
+            </summary>
+            <param name="productId">The value's identifier.</param>
+            <returns>A 200 OK response.</returns>
+        </member>
+        <member name="T:HonestyBar.Filters.Operations.CorrelationIdOperationFilter">
+            <summary>
+            Adds a OpenApi <see cref="T:Microsoft.OpenApi.Models.OpenApiParameter"/> to all operations with a description of the X-Correlation-ID
+            HTTP header and a default GUID value.
+            </summary>
+            <seealso cref="T:Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter" />
+        </member>
+        <member name="M:HonestyBar.Filters.Operations.CorrelationIdOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Applies the specified operation.
+            </summary>
+            <param name="operation">The operation.</param>
+            <param name="context">The context.</param>
+        </member>
+    </members>
+</doc>
