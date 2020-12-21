@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 
 namespace HonestyBar.Domain
 {
@@ -9,6 +10,7 @@ namespace HonestyBar.Domain
         {
             Id = Guid.NewGuid();
             Name = name;
+            UnitPrice = 1.6D;
         }
         public Product(string name , double unitprice = 0)
         {
@@ -17,6 +19,7 @@ namespace HonestyBar.Domain
             UnitPrice = unitprice;
         }
         public Guid Id { get; }
+         
 
         public string Name { get; }
         public double UnitPrice { get; } 

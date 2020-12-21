@@ -67,8 +67,8 @@ namespace HonestyBar
                 );
 
             database.AddRange(
-                new Product("Coca cola",1.60d),
-                new Product("Mineral water",1.20d)
+                new Product("Coca cola" ),
+                new Product("Mineral water",1.20D)
                 ); ;
 
             database.SaveChanges();

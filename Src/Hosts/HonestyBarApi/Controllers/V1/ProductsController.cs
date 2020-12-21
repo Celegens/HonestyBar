@@ -97,10 +97,7 @@ namespace HonestyBar.Controllers.V1
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
         public async Task<IActionResult> PostAsync([FromBody] CreateProductDto createProductDto, CancellationToken cancellationToken)
         {
-            var product = new Product(createProductDto.Name);
-
-            product = _productRepository.Add(product);
-
+            var product = new Product(createProductDto.Name); 
             await _productRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
 
             return CreatedAtAction(nameof(GetByIdAsync), new { id = product.Id } , new ProductDto(product.Id, product.Name));

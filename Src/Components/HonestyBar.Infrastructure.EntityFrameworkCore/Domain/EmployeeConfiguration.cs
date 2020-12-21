@@ -3,20 +3,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace HonestyBar.Domain
 {
-    public class EmployeeConfiguration : IEntityTypeConfiguration<Employee>
+    public class ConsumptionConfiguration : IEntityTypeConfiguration<Consumption>
     {
-        public void Configure(EntityTypeBuilder<Employee> builder)
+        public void Configure(EntityTypeBuilder<Consumption> builder)
         {
-            builder.HasKey(e => e.Id);
-
-            builder.Property(e => e.FirstName)
-                .IsRequired();
-
-            builder.Property(e => e.LastName)
-                .IsRequired();
-
-            builder.Property(e => e.Email)
-                .IsRequired();
+            builder.HasKey(e => e.Id); 
+            builder.Property(e => e.DateTime).IsRequired();
+  
         }
     }
 }

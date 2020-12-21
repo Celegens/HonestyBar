@@ -36,9 +36,10 @@ namespace HonestyBar.Controllers.V3
         {
             if(saldo > 0) { 
             var employee = await _employeeRepository.FindAsync(employeeId, cancellationToken);
-                employee.Saldo += saldo;
+                employee.Saldo += saldo; 
+                await _employeeRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
 
-            return new OkObjectResult(employee.Saldo);
+                return new OkObjectResult(employee.Saldo);
             }
             else
             {

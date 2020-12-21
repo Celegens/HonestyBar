@@ -78,9 +78,8 @@ namespace HonestyBar.Controllers.V1
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
         public async Task<IActionResult> GetAsync(CancellationToken cancellationToken)
         {
-            var employees = await _employeeRepository.GetAllAsync();
-
-            return new OkObjectResult(employees.Select(e => new EmployeeDto(e.Id, e.FirstName, e.LastName, e.Email)));
+            var employees = await _employeeRepository.GetAllAsync(); 
+            return new OkObjectResult(employees);
         }
 
         [HttpGet("{employeeId}")]
@@ -95,16 +94,14 @@ namespace HonestyBar.Controllers.V1
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
         public async Task<IActionResult> AddConsumptionAsync(Guid employeeId, Guid productId, CancellationToken cancellationToken = default)
         {
-            var employee = await _employeeRepository.FindAsync(employeeId, cancellationToken);
-            var product = await _productRepository.FindAsync(productId, cancellationToken);
-            
-            employee.Consumptions.Add(product);
-            employee.Saldo += product.UnitPrice;
+            var employee = await _employeeRepository.FindAsync(employeeId, cancellationToken).ConfigureAwait(false);
+            var product = await _productRepository.FindAsync(productId, cancellationToken).ConfigureAwait(false);
 
-            await _employeeRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
-            List<ProductDto> consumptionsDto = new List<ProductDto>() ;
-            employee.Consumptions.ForEach(c => consumptionsDto.Add(new ProductDto(c.Id, c.Name)));
-            return new OkObjectResult(new EmployeeDto(employee.Id, employee.FirstName, employee.LastName, employee.Email, consumptionsDto));
+            employee.Consumptions.Add(new Consumption(product));
+            employee.Saldo -= product.UnitPrice;
+             await _employeeRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken).ConfigureAwait(false);
+
+              return new OkObjectResult(employee);
         }
 
         [HttpPost]

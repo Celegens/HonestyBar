@@ -22,9 +22,9 @@ namespace HonestyBar
 
         public IUnitOfWork UnitOfWork => _unitOfWork;
 
-        public async Task<IEnumerable<Employee>> GetAllAsync(bool active = true,CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<Employee>> GetAllAsync(bool active = true, CancellationToken cancellationToken = default)
         {
-            return await _unitOfWork.Set<Employee>().Where(e => e.Active == active).ToListAsync(); 
+            return await _unitOfWork.Set<Employee>().Include(s => s.Consumptions).ThenInclude(c=>c.Product).Where(e => e.Active == active).ToListAsync();
         }
 
         public Employee Add(Employee employee)
@@ -34,11 +34,11 @@ namespace HonestyBar
             return employee;
         }
 
-      
-        public async Task<Employee> FindAsync( Guid id, CancellationToken cancellationToken)
+        public async Task<Employee> FindAsync(Guid id, CancellationToken cancellationToken)
         {
             return await _unitOfWork.Set<Employee>().FindAsync(new object[] { id }, cancellationToken);
         }
 
+      
     }
 }

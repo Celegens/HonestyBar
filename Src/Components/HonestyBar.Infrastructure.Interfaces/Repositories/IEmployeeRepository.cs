@@ -13,5 +13,6 @@ namespace HonestyBar.Infrastructure.Interfaces.Repositories
         Task<Employee> FindAsync(Guid id,CancellationToken cancellationToken = default);
 
         Employee Add(Employee employee );
+    
     }
 }

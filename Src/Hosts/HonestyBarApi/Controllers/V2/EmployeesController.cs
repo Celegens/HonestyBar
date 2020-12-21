@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mime;
 using System.Threading;
@@ -37,6 +38,7 @@ namespace HonestyBar.Controllers.V2
             var employee = await _employeeRepository.FindAsync(employeeId, cancellationToken);
             employee.Active = false; 
             await _employeeRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
+
             return new OkObjectResult(new EmployeeDto(employee.Id, employee.FirstName, employee.LastName, employee.Email));
         }
 
@@ -45,9 +47,17 @@ namespace HonestyBar.Controllers.V2
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
         public async Task<IActionResult> GetListOfEmployees(bool status, CancellationToken cancellationToken)
         {
-            var employees = await _employeeRepository.GetAllAsync(status, cancellationToken);
+            var employees = await _employeeRepository.GetAllAsync(status, cancellationToken) ;
+            List<EmployeeDto> employeesDto = new List<EmployeeDto>();
+            foreach (var employee in employees)
+            {
+                List<ProductDto> consumptionsDto = new List<ProductDto>();
+              employee.Consumptions.ToList<Consumption>().ForEach(c => consumptionsDto.Add(new ProductDto(c.Product.Id, c.Product.Name)));
+
+                employeesDto.Add(new EmployeeDto(employee.Id, employee.FirstName, employee.LastName, employee.Email,employee.Saldo ,consumptionsDto));;
+            }; 
            
-            return new OkObjectResult(employees.Select(e => new EmployeeDto(e.Id, e.FirstName, e.LastName, e.Email)));
+            return new OkObjectResult(employeesDto);
         }
     }
 }

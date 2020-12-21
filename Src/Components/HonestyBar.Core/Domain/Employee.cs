@@ -12,7 +12,7 @@ namespace HonestyBar.Domain
             FirstName = firstName;
             LastName = lastName;
             Email = email;
-            Consumptions = new List<Product>();
+            Consumptions =  new List<Consumption>(); 
             Active = true;
             Saldo = 0.0D;
         }
@@ -27,6 +27,6 @@ namespace HonestyBar.Domain
         public bool Active { get; set; }
         public double Saldo { get; set; }
 
-        public List<Product> Consumptions { get; set; }
+        public virtual ICollection<Consumption> Consumptions { get; set; }
     }
 }
